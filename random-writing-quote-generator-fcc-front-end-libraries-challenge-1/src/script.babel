@@ -1,0 +1,58 @@
+const quotesData = [
+  {
+    id: 1,
+    quote: "There is no greater agony than bearing an untold story inside you.",
+    author: "Maya Angelou",
+  },
+  {
+    id: 2,
+    quote: "If there's a book that you want to read, but it hasn't been written yet, then you must write it.",
+    author: "Toni Morrison"
+  },
+  {
+    id: 3,
+    quote: "Substitute 'damn' every time you're inclined to write 'very;' your editor will delete it and the writing will be just as it should be.",
+    author: "Mark Twain"
+  },
+  {
+    id: 4,
+    quote: "We write to taste life twice, in the moment and in retrospect.",
+    author: "Anais Nin"
+  },
+  {
+    id: 5,
+    quote: "You must stay drunk on writing so reality cannot destroy you.",
+    author: "Ray Bradbury"
+  },
+  {
+    id: 6,
+    quote: "You can't wait for inspiration. You have to go after it with a club.",
+    author: "Jack London",
+  }
+]
+
+let newQuote = ""
+let newAuthor = ""
+
+function fetchQuote() {
+  const randomInt = Math.floor(Math.random()*(quotesData.length))
+  let newQuoteData = quotesData[randomInt]
+  newQuote = newQuoteData.quote
+  newAuthor = newQuoteData.author
+  
+  $("#text").text(newQuote);
+  $("#author").text(newAuthor);
+  let twitterURL = encodeURI("https://twitter.com/intent/tweet?text="+newQuote+"  —"+newAuthor)
+  /*
+  This line breaks things even though it makes the text/author
+  visible before you click the link.
+  $("#tweet-quote").attr("href",twitterURL);
+  */
+  $("#tweet-quote").click(function(event) {
+    event.preventDefault();
+    window.open(twitterURL)
+  })
+}
+
+$(document).ready(() => fetchQuote())
+$("#new-quote").click(function(event) {fetchQuote()})
