@@ -1,0 +1,50 @@
+body {
+  background-color: #4f9783;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+}
+.toolbar {
+  background-color: #81d8d0;
+  display: block;
+  color: black;
+  font-family: arial;
+  border-bottom: 5px solid #59B0A8;
+  padding: 5px;
+}
+
+#editor {
+  height: 100%;
+  width: 600px;
+  padding-left: 10px;
+}
+
+#preview {
+  height: 100%;
+  width: 600px;
+  background-color: lightgray;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+textarea {
+   border: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {   
+    flex-direction: column;
+    align-items: center;
+  }
+  #editor {
+    height: 200px;
+  }
+  #preview {
+    height: 200px;
+    overflow-y: scroll;
+  }
+}
