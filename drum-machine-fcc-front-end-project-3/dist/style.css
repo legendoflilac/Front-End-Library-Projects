@@ -1,0 +1,38 @@
+.container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	grid-gap: 10px 10px;
+	
+}
+
+.drum-pad {
+	border: 2px solid #666699;
+	width: 100px;
+	height: 100px;
+	box-shadow: 10px 10px 40px 3px #666699 inset;
+	border-radius: 10px;
+}
+
+.title {
+	grid-column: 1/span 2;
+	
+}
+
+#display {
+	border: 2px solid white;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	background-color: white;
+}
+
+body {
+	background-color: #CCCCCC;
+	font-family: 'Tw Cen MT';
+}
+
+button {
+	font-family: 'Tw Cen MT';
+	font-size: 30px;
+}
