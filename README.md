@@ -6,3 +6,5 @@ The most recently updated versions of each project can be found below. Files in 
 - [Random Writing Quote Generator on CodePen](https://codepen.io/legendoflilac/pen/xxxXOmy)
 - [Markdown Previewer on CodePen](https://codepen.io/legendoflilac/pen/GRRyBLz)
 - [Drum Machine on CodePen](https://codepen.io/legendoflilac/pen/gOOeENK)
+- [Calculator w/eval() on CodePen](https://codepen.io/legendoflilac/pen/abbMvjm)
+- [Pomodoro Timer on Codepen](https://codepen.io/legendoflilac/pen/PowYRvZ)
