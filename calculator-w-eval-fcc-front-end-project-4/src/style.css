@@ -1,0 +1,115 @@
+body {
+	background-color: #474747;
+	color: darkgray;
+	font-size: 18px;
+	font-family: arial;
+}
+
+button {
+	font-size: 18px;
+	width: 5vw;
+	height: 15vh;
+	border: 0;
+	background-color: #d3d3d3;
+}
+
+.calc-container {
+	margin-left: auto;
+  margin-right: auto;
+	width: 22vw;
+}
+
+.grid-container {
+	margin-left: auto;
+  margin-right: auto;
+	width: 20vw;
+	display: grid;
+	grid-gap:  3px;
+	grid-template-columns: auto auto auto auto;
+	/*grid-template-areas:
+		'clear divide multiply subtract'
+		'seven eight nine add'
+		'four five six add'
+		'one two three equals'
+		'zero zero decimal equals'*/
+}
+#display {
+	margin-left: 1vw;
+}
+
+#clear {
+	grid-area: 'clear';
+	background-color: #8b0000;
+}
+
+#divide {
+	grid-area: 'divide';
+	background-color: #5858a7;
+}
+
+#multiply {
+	grid-area: 'multiply';
+	background-color: #5858a7;
+}
+
+#subtract {
+	grid-area: 'subtract';
+	background-color: #5858a7;
+}
+
+#add {
+	grid-area: 'add';
+	background-color: #5858a7;
+}
+
+#equals {
+	grid-area: 'equals';
+	background-color: #5858a7;
+}
+
+#seven {
+	grid-area: 'seven'
+}
+
+#eight {
+	grid-area: 'eight'
+}
+
+#nine {
+	grid-area: 'nine'
+}
+
+#four {
+	grid-area: 'four'
+}
+
+#five {
+	grid-area: 'five'
+}
+
+#six {
+	grid-area: 'six'
+}
+
+#one {
+	grid-area: 'one'
+}
+
+#two {
+	grid-area: 'two'
+}
+
+#three {
+	grid-area: 'three'
+}
+
+#zero {
+	grid-area: 'zero'
+	grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#decimal {
+	grid-area: 'decimal';
+	background-color: #5858a7;
+}
